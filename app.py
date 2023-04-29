@@ -7,7 +7,7 @@ st.set_page_config(page_title = "ClimateDecomposer", page_icon="~")
 st.title("~ClimateDecomposer")
 st.markdown('### Decomposing the paleoclimate record into orbital components using Singular Spectrum Analysis')
 
-about = '''ClimateDecomposer allows you to decompose famous paleoclimate records into their constituent periodic components. In other words, it lets you visualise the different cyclic components of past climates using *Singular Spectrum Analysis* (SSA). 
+about = '''ClimateDecomposer allows you to decompose famous paleoclimate records into their constituent components and noise. In other words, it lets you visualise the different components of past climates using *Singular Spectrum Analysis* (SSA), in particular the orbital cycles underlying long-term climate records. A periodogram of each Reconstructed Components can then be viewed to check if it aligns with a known orbital frequency band.  
 
 Created and maintained by [Aidan Starr](https://aidanstarr.github.io/). SSA code adapted from [Braun et al., 2023](https://doi.org/10.1038/s43247-023-00717-5) and [this blog post by Jordon D\'Arcy](https://www.kaggle.com/code/jdarcy/introducing-ssa-for-time-series-decomposition/notebook). The app itself is inspired by [**Renewcast** by Giannis Tolios](http://renewcast.giannis.io/) - check it out.  
 
