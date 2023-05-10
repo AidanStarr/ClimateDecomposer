@@ -81,10 +81,10 @@ st.plotly_chart(fig2, use_container_width = True)
 
 #### periodogram
 st.markdown('#### Periodogram of Reconstructed Components')
-
-detrend = st.checkbox('Detrend?')
-if detrend:
-    y = y - ssa.reconstruct([0])
+if RC_num0==1:
+    detrend = st.checkbox('Detrend?')
+    if detrend:
+        y = y - ssa.reconstruct([0])
 
 f,pxx = util.periodogram(ssa.reconstruct([0]).index,y)
 
